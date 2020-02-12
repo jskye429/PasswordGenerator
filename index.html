@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Random Password Generator</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel ="stylesheet" href = "reset.css">
+    <link rel ="stylesheet" href = "main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script src="script.js"></script> 
 </head>
 
 <body>
@@ -18,67 +19,58 @@
     <span class="navbar-brand mb-0 h1">Random Password Generator</span>
     </nav>
 <div class= "jumbotron">
+<div class = "container">
+<div class = "col-md-6">
+    
     <h6> Choose the characters your password will contain:</h6>
-
-
-
+<div class = row>
 <div>
     <input type= "checkbox" id = "upperCase" name = "Upper Case"
-            checked>
+            unchecked>
     <label for="upperCase">Upper Case</label>
+    
 </div>
 
 <div>
     <input type= "checkbox" id = "lowerCase" name = "Lower Case"
-            checked>   
+            unchecked>   
     <label for="lowerCase">Lower Case</label>
+    
 </div>
 
 <div>
     <input type= "checkbox" id = "numbers" name = "Numbers"
-            checked>   
+            unchecked>   
     <label for="numbers">Lower Case</label>
+    
 </div>
 
 <div>
     <input type= "checkbox" id = "specials" name = "Special Characters"
-            checked>   
+            unchecked>   
     <label for="numbers">Special Characters</label>
-</div>
-</div>
 
-
-<script>
-if(confirm("Do you want to generate a random password?")) {
-   
-}
-else {
-    
-}
+</div> <!-- closes checkbox-->
 
 
 
+</div> <!-- closes col-->
+
+<div class = col-md-6>
+
+<button type="button" id = "submitButton" class="button">Create Password</button>
+
+</div> <!-- closes col-->
+<textarea id="createdPassword" class="createdPass" rows="4" cols="30">
+    Your password will appear here!
+    </textarea>
+</div> <!-- closese row-->
+</div> <!-- closes container-->
+</div> <!-- closes jumbotron-->
 
 
 
-</script>
 
 
-
-<!-- user selects their preference-->
-
-<!-- 26 leters, 10 digits, #of special characters, utilizing capital letters letter option becomes 52-->
-
-<!-- a password then generates and displays to the user-->
-
-<!-- # array to store data should be a way to hold alaphabet easily, the array loops 8 times for 8 characters-->
-
-<!-- if then else? to ask options of user-->
-
-<!-- output will be after 8 loops  -->
-
-
-<script>
-</script>
 </body>
 </html>
