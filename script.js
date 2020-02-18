@@ -1,10 +1,10 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
-var upperCase = ["A", "B", "C", "D", "E", "F","G", "H", "I", "J","K", "L","M", "N", "O", "P", "Q", "R", "S", "T","U", "P", "Q", "R", "S", "T","U","V","W","X","Y","Z"]
-var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","q","r","s","t","u","v","w","x","y","z"]
-var numbers = ["1","2","3","4","5","6","7","8","9","0"]
-var specials = ["!","@","#","$","%","^","&","*","(",")","-","+"]
+var upperCaseArray = ["A", "B", "C", "D", "E", "F","G", "H", "I", "J","K", "L","M", "N", "O", "P", "Q", "R", "S", "T","U", "P", "Q", "R", "S", "T","U","V","W","X","Y","Z"]
+var lowerCaseArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","q","r","s","t","u","v","w","x","y","z"]
+var numbersArray = ["1","2","3","4","5","6","7","8","9","0"]
+var specialsArray = ["!","@","#","$","%","^","&","*","(",")","-","+"]
 var MasterArray = [];
  
 
@@ -15,28 +15,26 @@ var MasterArray = [];
  var submitButton = document.getElementById("submitButton");
 
   
-submitButton.addEventListener("click", manifest); {
-
-}
-
+ submitButton.addEventListener("click", function() {
+    manifest();
+    console.log(MasterArray)
+});
 function manifest() {
-
 if (upperCase.checked === true){ 
-    MasterArray== MasterArray + upperCase
+    MasterArray = MasterArray.concat(upperCaseArray)
     };
 if (lowerCase.checked === true){
-    MasterArray== MasterArray + lowerCase
+    MasterArray = MasterArray.concat(lowerCaseArray)
     };
 if (numbers.checked === true) {
-    MasterArray== MasterArray + numbers
-    
+    MasterArray = MasterArray.concat(numbersArray)
     };
 if (specials.checked === true) {
-    MasterArray== MasterArray + specials
+    MasterArray = MasterArray.concat(specialsArray)
     
 
   }};
-  console.log(MasterArray.value)
+  
 
 
 
