@@ -32,9 +32,15 @@ if (numbers.checked === true) {
 if (specials.checked === true) {
     MasterArray = MasterArray.concat(specialsArray)
     
+}};
 
-  }};
-  
+// for (let i = 0; i < Masterarray.length; index++) {
+//     const manifestPass = MasterArray[index];
+   
+
+// }
+
+
 
 
 
@@ -46,3 +52,9 @@ if (specials.checked === true) {
 
 // these last 3 characters close document.ready
  }); 
+
+
+// .addEventListener("click", function(){
+//      .select();
+//         document.execCommand("copy");
+// })
