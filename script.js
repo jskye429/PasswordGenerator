@@ -34,10 +34,6 @@ if (specials.checked === true) {
     
 }};
 
-// for (let i = 0; i < Masterarray.length; index++) {
-//     const manifestPass = MasterArray[index];
-   
-
 // }
 
 
