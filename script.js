@@ -38,12 +38,22 @@ if (specials.checked === true) {
   }};
   console.log(MasterArray.value)
 
+// for loop over the master array at the length the user defines
+
 
 
 
 
  
-
+//copy to clipboard functionality here
+// alert "copied to clipboard"
+// function copy() {
+//     var copyText = document.querySelector("#input");
+//     copyText.select();
+//     document.execCommand("copy");
+//   }
+  
+//   document.querySelector("#copy").addEventListener("click", copy);
 
 
 // these last 3 characters close document.ready
